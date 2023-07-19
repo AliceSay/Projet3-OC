@@ -13,9 +13,76 @@
   color: var(--main-color);
 }
 
-body {
+nav {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+}
+
+.accueil-hebergements-and-activites {
+  padding-left: 820px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.accueil-hebergements a {
+  text-decoration: none;
+}
+
+.accueil-hebergements a :hover {
+  color: #0065fc;
+}
+
+.accueil-activites a {
+  text-decoration: none;
+}
+
+.accueil-activites a :hover {
+  color: #0065fc;
+}
+
+p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+h1 {
+  padding-top: 10px;
+}
+
+.Button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: auto;
+  width: 400px;
+}
+
+.Icon {
+  background-color: #f2f2f2;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px 0 0 10px;
+}
+
+.localresearch {
+  width: 200px;
+  height: 50px;
+  border: none;
+}
+
+.button {
+  width: 110px;
+  height: 50px;
+  color: #0065fc;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
 }
 
 .main-container {
@@ -54,9 +121,11 @@ body {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .hebergements-and-populaires section {
@@ -69,6 +138,55 @@ body {
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
+}
+
+.hebergements-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hebergements-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.hebergements-cards .card {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin-top: 33px;
+}
+
+.hebergements-cards img {
+  width: 100%;
+  height: 122px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+  margin-top: 11px;
+  margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+  margin: 0;
+}
+
+.populaires-cards .card-rating {
+  margin-bottom: 0px;
 }
 
 /****** Populaires ***********/
