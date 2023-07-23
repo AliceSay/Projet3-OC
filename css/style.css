@@ -13,6 +13,11 @@
   color: var(--main-color);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 /********HEADER**************/
 
 nav {
