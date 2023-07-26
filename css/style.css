@@ -32,6 +32,11 @@ nav {
   display: flex;
 }
 
+.accueil-logo img {
+  width: 55px;
+  height: 25px;
+}
+
 .accueil-hebergements-and-activites {
   padding-left: 900px;
   display: flex;
@@ -66,34 +71,29 @@ p {
 
 h1 {
   padding-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
-.button-container {
+.form-search {
   display: flex;
-  flex-direction: row;
-  align-items: auto;
-  width: 400px;
-}
-
-.Icon {
-  background-color: #f2f2f2;
-  width: 50px;
-  height: 50px;
-  border-radius: 10px 0 0 10px;
 }
 
 .local-research {
   width: 200px;
   height: 50px;
-  border: none;
+  border: 1px solid #f2f2f2;
 }
 
-.bouton-rechercher {
-  width: 110px;
+.btn-search {
+  width: 130px;
   height: 50px;
   background-color: #0065fc;
-  cursor: pointer;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 15px 15px 0;
+  color: #deebff;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
 }
 
 .filtres {
@@ -108,17 +108,19 @@ button {
   height: 50px;
   border-radius: 50px;
   background-color: white;
-  border-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
   font-size: 16px;
   font-weight: bold;
 }
 
-button i {
-  padding-right: 10px;
+button :hover {
+  color: #deebff;
 }
 
-.info p {
-  margin-left: 15px;
+.icone-info {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
 }
 
 .main-container {
@@ -129,7 +131,7 @@ button i {
 }
 
 .section-title {
-  margin: 20px;
+  margin: 0;
   font-size: 22px;
 }
 
@@ -156,6 +158,11 @@ button i {
   color: var(--main-bg-color);
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /****** Hebergements And Populaires ***********/
 
 .hebergements-and-populaires {
@@ -167,8 +174,9 @@ button i {
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 35px;
+  padding: 25px;
   box-sizing: border-box;
+  margin-top: 30px;
 }
 
 /****** Hebergements ***********/
@@ -188,11 +196,13 @@ button i {
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
+  padding-bottom: 20px;
 }
 
 .hebergements-cards .card {
   display: flex;
-  width: 30%;
+  width: 250px;
+  height: 200px;
   flex-direction: column;
   margin-top: 33px;
 }
@@ -205,11 +215,24 @@ button i {
 }
 
 .hebergements-cards .card-content {
-  width: 60%;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+  margin-top: 11px;
+  margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+  margin: 0;
+}
+
+.hebergements-cards .card-rating {
+  margin-bottom: 7px;
 }
 
 /****** Populaires ***********/
@@ -260,64 +283,59 @@ button i {
 /******Activités***********/
 
 .activites {
+  margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.activites section {
-  width: 100%;
-}
-
-.activites-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 30px;
+.activites .section-title {
+  padding-left: 20px;
 }
 
 .activites-cards {
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
-  gap: 15px;
   justify-content: center;
+  gap: 26px;
+  margin-top: 30px;
 }
 
 .activites-cards .card {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .activites-cards img {
-  width: 300px;
-  height: 380px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  width: 310px;
+  height: 400px;
+  border-radius: 20px 20px 0 0;
 }
 
 .activites-cards .cards-content {
-  width: 300px;
+  width: 310px;
   height: 150px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.activites-cards .card-title {
+  padding-left: 20px;
 }
 
 /*****footer********/
 
 .pied-de-page {
   background-color: var(--main-bg-color);
-  width: 1300px;
-  display: flex;
-  flex-direction: row;
-  gap: 250px;
-  margin-left: 50px;
-  margin-top: 50px;
+  width: 1350px;
 }
 
-.à-propos {
-  padding-left: 30px;
+.menu-pied-de-page {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  margin-top: 30px;
+  gap: 250px;
 }
 
 /****** Media queries ***********/
