@@ -43,7 +43,10 @@
                     <form action="" method="post">
                         <img class="icone-localisation" src="images/logo/icône info.svg">
                         <input class="local-research" type="text" value="Marseille, France">
-                        <input class="btn-search" type="submit" value="Rechercher">
+                        <input class="btn-search" id="desktop" type="submit" value="Rechercher">
+                        <button class="mobile" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </form>
                 </div>
                 <div class="filtres">
@@ -84,11 +87,11 @@
             </section>
             <section class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <a href="#">
-                        <div id="hebergements-title">
-                            <h2 class="section-title">Hébergements à Marseille</h2>
-                        </div>
-                        <div class="hebergements-cards">
+                    <div id="hebergements-title">
+                        <h2 class="section-title">Hébergements à Marseille</h2>
+                    </div>
+                    <div class="hebergements-cards">
+                        <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -107,6 +110,8 @@
                                     </div>
                                 </div>
                             </article>
+                        </a>
+                        <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -125,6 +130,8 @@
                                     </div>
                                 </div>
                             </article>
+                        </a>
+                        <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/reisetopia.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -143,6 +150,8 @@
                                     </div>
                                 </div>
                             </article>
+                        </a>
+                        <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/annie-spratt.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -161,6 +170,8 @@
                                     </div>
                                 </div>
                             </article>
+                        </a>
+                        <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/marcus-loke.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -179,6 +190,8 @@
                                     </div>
                                 </div>
                             </article>
+                        </a>
+                        <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/nicate-lee.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -197,8 +210,9 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
-                        <h3>Afficher plus</h3>
+                        </a>
+                    </div>
+                    <h3>Afficher plus</h3>
                     </a>
                 </section>
                 <section class="populaires">
@@ -311,31 +325,39 @@
                 <div class="menu-pied-de-page">
                     <div>
                         <h3>A propos</h3>
-                        <a href="#">
-                            <ul>
+                        <ul>
+                            <a href="#">
                                 <ol>Fonctionnement du site</ol>
+                            </a>
+                            <a href="#">
                                 <ol>Conditions générales</ol>
+                            </a>
+                            <a href="#">
                                 <ol>Données et confidentialité</ol>
-                            </ul>
-                        </a>
+                            </a>
+                        </ul>
                     </div>
                     <div>
                         <h3>Nos hébergements</h3>
-                        <a href="#">
-                            <ul>
+                        <ul>
+                            <a href="#">
                                 <ol>Charte qualité</ol>
+                            </a>
+                            <a href="#">
                                 <ol>Proposer votre hôtel</ol>
-                            </ul>
-                        </a>
+                            </a>
+                        </ul>
                     </div>
                     <div>
                         <h3>Assistance</h3>
-                        <a href="#">
-                            <ul>
+                        <ul>
+                            <a href="#">
                                 <ol>Centre d'aide</ol>
+                            </a>
+                            <a href="#">
                                 <ol>Nous contacter</ol>
-                            </ul>
-                        </a>
+                            </a>
+                        </ul>
                     </div>
                 </div>
             </section>
